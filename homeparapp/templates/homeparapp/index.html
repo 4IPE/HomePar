@@ -1,0 +1,43 @@
+{% extends 'homeparapp/layout.html' %}
+
+
+
+
+
+{%block title%}HomePar{%endblock%}
+{% block mainbd %}
+<div class="home">
+    <div class="row align-items-center g-lg-5 py-5 " >
+      <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Начать пользоваться очень просто !</h1>
+           <p class="col-lg-10 fs-4">Сначала введите город в котором вы бы хотели найти квартиру, потом введите стоимость и площадь квартиры. Нажми кнопку "Click" и получите квартиры по заданным данным</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light" method="post">
+            {% csrf_token %}
+            <div class="form-floating mb-3">
+                  {{formcity.city}}
+                  <label for="city">Город</label>
+            </div>
+            <div class="form-floating mb-3">
+              {{formroom.room}}
+              <label for="s">Кол-во комнат</label>
+           </div>
+            <label class="form-floating mb-3">Цена&nbsp&nbsp&nbsp</label>
+              <div class="form-floating mb-3">           
+                  {{formlow.price_low}}
+                  <label for="price_low">От:</label>
+              </div>
+              <div class="form-floating mb-3">
+                {{formhigh.price_high}}
+                <label for="price_high">До:</label>
+              </div>
+              <span>{{error}}</span>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Click</button>
+              <hr class="my-4">
+              <small class="text-muted">Нажми те на кнопку Click чтобы узнать ответ</small>
+          </form>
+        </div>
+     </div>
+</div>
+{%endblock%}

@@ -1,0 +1,15 @@
+{% extends 'homeparapp/layout.html' %}
+
+
+{%block title%}Support{%endblock%}
+{% block mainbd %}
+<div class="support">
+  <h1 class="display-3 fw-bold">Support</h1></br>
+  <form method="post">
+    {% csrf_token %}
+    {{form.tema}}</br>
+    {{form.main}}</br>
+    <button class="w-100 btn btn-lg btn-dark" type="submit">Отправить</button>
+  </form> 
+</div>
+{%endblock%}

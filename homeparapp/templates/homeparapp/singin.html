@@ -1,0 +1,30 @@
+{% extends 'homeparapp/layoutno.html' %}
+<th class="display-4">
+
+</th>
+
+{% block title %}SingIn{% endblock %}
+
+{% block nosin %}
+<div class="singin">
+  <div class="row align-items-center g-lg-5 py-5 " >
+    <div class="col-md-10 mx-auto col-lg-5">
+      <h1 class="display-4 fw-bold lh-1 mb-4">ℍOMEℙAR</h1>
+      <form class="p-4 p-md-5 border rounded-3 bg-light" method="post">
+        {% csrf_token %}
+        <div class="form-floating mb-3">
+          {{form.email}}
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          {{form.pasword}}
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+        <hr class="my-4">
+        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+      </form>
+    </div>
+  </div>
+</div>
+  {%endblock%}

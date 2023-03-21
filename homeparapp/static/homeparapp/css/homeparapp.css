@@ -1,0 +1,82 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");                        
+.row{
+position: relative;
+margin-left: 480px;
+margin-top: 50px;
+font-size: 150%;
+}
+.learn{
+    margin-top: 30px;
+    width: 282px;
+    }
+.zag{
+    position: absolute;
+    right: 30%;
+    left: 40%;
+    top: 30%;
+}
+
+.price{
+    position: relative;
+    text-align:center;  
+    margin-top: 5%; 
+}
+.singin{
+    text-align:center;  
+    margin-top: 5%; 
+    margin-right: 16%;
+    margin-left: -10%;
+}
+.support{
+    margin-left: 35%;
+    width: 35%;
+    margin-top: 10%;
+}
+.menu{
+    margin-left: 35%;
+}
+p {
+  font-family: 'Oswald', sans-serif !important;
+}
+.nameprice{
+    margin-right: 16%;
+
+}
+.res{
+    text-align:center; 
+    position: absolute;
+    right: 20%; 
+    left: 20%; 
+    top: 50%;
+    width:60%;
+}
+.home{
+    text-align:center;  
+    margin-top: 5%; 
+    margin-right: 16%;
+    margin-left: -10%;
+}
+
+.price_table{
+    position: absolute;
+    right: 28%; 
+    top: 30%;
+
+
+}
+
+.avito{
+    position: absolute;
+    width: 100%; 
+    top: 50%;
+
+}
+.cian{
+    position: absolute;
+    width: 100%; 
+    top: 60%;
+}
+.res{
+    text-align:center;  
+
+}
