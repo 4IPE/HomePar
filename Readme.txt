@@ -8,7 +8,10 @@ Conda - conda create --name your name venv
         conda deactivate (Для деактивации)
 
 2.После того ,как установили окружение прописываем в консоле pip install -r requirements.txt
+
 3.Если вы используете ПО на UNIX перейдите в result.html и cian.py и поменяться расположение (с такого формата homeparapp\\static\\homeparapp\\parsfile\\infocian.txt на homeparapp//static//homeparapp//parsfile//infocian.txt)
+
+4.Прописываем в консоле python manage.py runserver
 
 
 
@@ -18,4 +21,4 @@ Conda - conda create --name your name venv
 template-папка с документами html
 static - папка с динамически изменяемыми фалйами 
 migrations - папка со всеми миграциями (миграции требуются при создании моделей(бд))
-pars - это папка с парсером cian и avito
+pars - это папка с парсерами
